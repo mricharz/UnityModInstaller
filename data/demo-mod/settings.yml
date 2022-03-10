@@ -1,0 +1,141 @@
+﻿modName: Phasmophobia German SpiritBox
+author: Manuel Richarz (Valtos)
+license: CC BY-SA 4.0
+selectFolderDescription: Wähle den Phasmophobia Ordner
+initialDirectory: "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Phasmophobia\\Phasmophobia_Data\\"
+continueIfInitialDirectoryExists: true
+assets:
+  - file: sharedassets2.assets
+    replaceAssetsFromAssets:
+      - file: mod/sharedassets0.assets
+        replacements:
+          - source: In_der_naehe_female
+            target: Close F
+            resourceFile: spiritbox_de.resource
+          - source: In_der_naehe_kid
+            target: Close
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_ganz_in_deiner_naehe_male
+            target: Close male
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_neben_dir_female
+            target: Next F
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_neben_dir_kid
+            target: Next
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_neben_dir_male
+            target: Next male
+            resourceFile: spiritbox_de.resource
+          - source: Hass_female
+            target: Hate F
+            resourceFile: spiritbox_de.resource
+          - source: Hass_5_kid
+            target: Hate
+            resourceFile: spiritbox_de.resource
+          - source: Hass_male
+            target: Hate male
+            resourceFile: spiritbox_de.resource
+          - source: Toeten_female
+            target: Kill F
+            resourceFile: spiritbox_de.resource
+          - source: Toeten_kid
+            target: Kill
+            resourceFile: spiritbox_de.resource
+          - source: Toeten_male
+            target: Kill male
+            resourceFile: spiritbox_de.resource
+          - source: Verletzten_female
+            target: Hurt F
+            resourceFile: spiritbox_de.resource
+          - source: Verletzten_kid
+            target: Hurt
+            resourceFile: spiritbox_de.resource
+          - source: Verletzten_male
+            target: Hurt Male
+            resourceFile: spiritbox_de.resource
+          - source: Weit_weg_female
+            target: Far F
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_weit_weg_kid
+            target: Far
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_weit_weg_male
+            target: Far male
+            resourceFile: spiritbox_de.resource
+          - source: Hinter_dir_female
+            target: Behind F
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_direkt_hinter_dir_kid
+            target: Behind
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_direkt_hinter_dir_male
+            target: Behind Male
+            resourceFile: spiritbox_de.resource
+          - source: Jung_female
+            target: Young F
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_jung_kid
+            target: Young
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_jung_male
+            target: Young male
+            resourceFile: spiritbox_de.resource
+          - source: Angreifen_female
+            target: Attack F
+            resourceFile: spiritbox_de.resource
+          - source: Angreifen_kid
+            target: Attack
+            resourceFile: spiritbox_de.resource
+          - source: Angreifen_male
+            target: Attack male
+            resourceFile: spiritbox_de.resource
+          - source: Nicht_hier_female
+            target: Away F
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_wo_anderst_kid
+            target: Away
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_nicht_hier_male
+            target: Away male
+            resourceFile: spiritbox_de.resource
+          - source: Alt_female
+            target: Old F
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_alt_kid
+            target: Old
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_alt_male
+            target: Old male
+            resourceFile: spiritbox_de.resource
+          - source: Tot_female
+            target: Death F
+            resourceFile: spiritbox_de.resource
+          - source: Tot_kid
+            target: Death
+            resourceFile: spiritbox_de.resource
+          - source: Tot_male
+            target: Death Male
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_hier_female
+            target: Here F
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_doch_hier_kid
+            target: Here
+            resourceFile: spiritbox_de.resource
+          - source: Ich_bin_doch_hier_male
+            target: Here male
+            resourceFile: spiritbox_de.resource
+          - source: Stirb_female
+            target: Die F
+            resourceFile: spiritbox_de.resource
+          - source: Du_sollst_sterben_kid
+            target: Die
+            resourceFile: spiritbox_de.resource
+          - source: Du_sollst_sterben_male
+            target: Die male
+            resourceFile: spiritbox_de.resource
+copyFiles:
+    - source: mod/sharedassets0.resource
+      target: spiritbox_de.resource
+      overwrite: true
