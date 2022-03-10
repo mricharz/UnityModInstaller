@@ -58,9 +58,11 @@ namespace UnityModInstaller {
             this.listBox1.ItemHeight = 20;
             this.listBox1.Items.AddRange(new object[] {
             "",
-            "Author of Installer: Manuel Richarz",
+            "This UnityModInstaller:",
             "",
-            "MIT License",
+            "Author: Manuel Richarz",
+            "Repository: https://github.com/mricharz/UnityModInstaller",
+            "License: MIT",
             "",
             "Copyright (c) 2022 Manuel Richarz",
             "",
