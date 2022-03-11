@@ -33,7 +33,7 @@ jobs:
 
       - name: Bundle
         run: |
-          zip --junk-paths UnityModInstaller UnityAssetReplacer/bin/Release/install.exe LICENSE.txt README.md
+          Get-ChildItem -Path UnityAssetReplacer/bin/Release/install.exe, LICENSE.txt, README.md | Compress-Archive -DestinationPath UnityModInstaller.zip
 
       - uses: actions/upload-artifact@v3
         with:
