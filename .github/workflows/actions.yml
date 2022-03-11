@@ -21,3 +21,4 @@ jobs:
       
       - name: Build all Sample solutions
         run: msbuild UnityModInstaller.sln /p:configuration=${{ matrix.configuration }} /p:platform=${{ matrix.platform }}
+        
