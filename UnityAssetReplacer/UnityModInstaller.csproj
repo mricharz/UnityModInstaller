@@ -74,10 +74,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>CA947B65A7D55F8F3E32F907BF3A624A731BCAB0</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>2F4C5D06F7FB9BEA45A06C3B6294FF2EEA2E86CF</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>UnityModInstaller_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>UnityModInstaller_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AssetsTools.NET, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -282,6 +282,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UnityModInstaller_1_TemporaryKey.pfx" />
     <None Include="UnityModInstaller_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
