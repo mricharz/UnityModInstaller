@@ -12,6 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/cache@v1
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }} #hash of project files
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
       - name: Setup MSBuild.exe
         uses: microsoft/setup-msbuild@v1.1
       
@@ -23,6 +30,9 @@ jobs:
       
       - name: Build all Sample solutions
         run: msbuild UnityModInstaller.sln /p:configuration="${{ matrix.configuration }}" /p:platform="${{ matrix.platform }}"
+
+      - name: Debug
+        run: pwd
 
       - uses: actions/upload-artifact@v3
         with:
