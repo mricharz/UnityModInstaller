@@ -1,5 +1,7 @@
 # UnityAssetReplacer
 
+Create a Mod-Installer for your created game mod for games made with unity.
+
 ## Development
 
 You need [.NET 4.7.1](https://support.microsoft.com/de-de/topic/microsoft-net-framework-4-7-1-offline-installer-f%C3%BCr-windows-2a7d0d5e-92f2-b12d-aed4-4f5d14c8ef0c) installed.
