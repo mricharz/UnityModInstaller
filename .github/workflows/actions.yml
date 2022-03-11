@@ -1,5 +1,9 @@
 name: Build
-on: [push]
+on: 
+  push:
+    tags-ignore:
+      - '**'
+      
 jobs:
   VS-2022:
     runs-on: windows-2022
