@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         configuration: [Release]
-        platform: [x64]
+        platform: [Any CPU]
 
     steps:
       - uses: actions/checkout@v2
