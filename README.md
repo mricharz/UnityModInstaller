@@ -14,7 +14,19 @@ Thats it.
 You can get the finsihed *install.exe* from the [Release-Page](https://github.com/mricharz/UnityModInstaller/releases).
 
 This installer needs to be configured with a *settings.yml*.
+The *settings.yml* describes the *install.exe* how to install the *mod-files* into the affected game.
+
 You can find a demo configuration in [*data/demo-mod/*](https://github.com/mricharz/UnityModInstaller/tree/main/data/demo-mod)
+
+Put the *mod-files*, the *settings.yml* and the *install.exe* into one folder:
+```
+/
+|-mod/ - Directory containing files used for this mod
+|-settings.yml
+|-install.exe
+|-README.txt (optional) add a readme file with instructions, license, credits etc. for the user
+```
+Compress the structure above into a zip-file and you have a pretty bundled mod for your game.
 
 ## Documentation
 
