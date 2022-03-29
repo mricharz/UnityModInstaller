@@ -2,10 +2,10 @@
 author: Manuel Richarz (Valtos)
 license: CC BY-SA 4.0
 selectFolderDescription: Wähle den Phasmophobia Ordner
-initialDirectory: "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Phasmophobia\\Phasmophobia_Data\\"
+initialDirectory: "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Phasmophobia\\"
 continueIfInitialDirectoryExists: true
 assets:
-  - file: sharedassets2.assets
+  - file: Phasmophobia_Data/sharedassets2.assets
     replaceAssetsFromAssets:
       - file: mod/sharedassets0.assets
         replacements:
@@ -137,5 +137,5 @@ assets:
             resourceFile: spiritbox_de.resource
 copyFiles:
     - source: mod/sharedassets0.resource
-      target: spiritbox_de.resource
+      target: Phasmophobia_Data/spiritbox_de.resource
       overwrite: true
