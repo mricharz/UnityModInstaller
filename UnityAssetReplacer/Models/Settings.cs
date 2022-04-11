@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 
 namespace UnityModInstaller.Models {
     public class Settings : Reportable {
@@ -22,8 +23,10 @@ namespace UnityModInstaller.Models {
                 try {
                     item.setReportHandler(addLogEntry, updateProgressBar, increaseProgressBarMax);
                     item.execute(workingDir, applicationDir);
+                } catch (IOException ioEx) {
+                    error($"Modifing assets in \"{item.file}\" failed! {ioEx.Message}");
                 } catch (Exception ex) {
-                    error($"Modifing assets in \"{item.file}\" failed!");
+                    error($"Modifing assets in \"{item.file}\" failed! {ex.Message}");
                     Console.WriteLine(ex);
                 }
                 performStep();
@@ -34,8 +37,10 @@ namespace UnityModInstaller.Models {
                 try {
                     item.setReportHandler(addLogEntry, updateProgressBar, increaseProgressBarMax);
                     item.execute(workingDir, applicationDir);
+                } catch (IOException ioEx) {
+                    error($"Copying file \"{item.source}\" failed! {ioEx.Message}");
                 } catch (Exception ex) {
-                    error($"Copying file \"{item.source}\" failed!");
+                    error($"Copying file \"{item.source}\" failed! {ex.Message}");
                     Console.WriteLine(ex);
                 }
                 performStep();

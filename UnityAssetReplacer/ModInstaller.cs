@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -7,7 +8,7 @@ using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
 namespace UnityModInstaller {
-    public partial class Form1 : Form {
+    public partial class ModInstaller : Form {
 
         private string finishedText = "Close";
 
@@ -15,7 +16,7 @@ namespace UnityModInstaller {
 
         private Settings settings;
 
-        public Form1() {
+        public ModInstaller() {
             InitializeComponent();
 
             // load settings.yml
@@ -108,14 +109,15 @@ namespace UnityModInstaller {
                 return settings.initialDirectory;
             }
 
-            using (FolderBrowserDialog openFolderDialog = new FolderBrowserDialog()) {
-                openFolderDialog.Description = settings.selectFolderDescription;
-                openFolderDialog.SelectedPath = settings.initialDirectory;
-
-                if (openFolderDialog.ShowDialog() == DialogResult.OK) {
-                    return openFolderDialog.SelectedPath;
+            using (CommonOpenFileDialog dialog = new CommonOpenFileDialog()) {
+                dialog.InitialDirectory = settings.initialDirectory;
+                dialog.Title = settings.selectFolderDescription;
+                dialog.IsFolderPicker = true;
+                if (dialog.ShowDialog() == CommonFileDialogResult.Ok) {
+                    return Path.GetDirectoryName(dialog.FileName);
                 }
             }
+
             return null;
         }
          
